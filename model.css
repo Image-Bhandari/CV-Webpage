@@ -1,0 +1,26 @@
+body{
+  background-color: #BCBABE;
+}
+header{
+  text-align: center;
+}
+.block{
+
+  background-color: #F1F1F2;
+  border-radius: 50px;
+  padding:1%;
+  margin-top:1%;
+  height:auto;
+}
+.row{
+  text-align: center;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+
+}
+img{
+  height:auto;
+  width:90%;
+
+}

@@ -1,0 +1,134 @@
+body{
+  background-color:#311e08;
+  margin:0%;
+  padding:0%;
+  color:#daf5ce;
+}
+header{
+  width: 100%;
+  text-align: center;
+  }
+.back{ /* main block*/
+background-color: #5b543a;
+width: 100%;
+
+box-shadow: 2px 2px 3px grey;
+}
+
+.front{/* top part of main block*/
+width: 100%;
+display: flex;
+flex-direction: row;
+
+}
+.left{ /*top left image containning block*/
+flex: 1;
+background-color:#858a6b;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+
+}
+.right{ /*top right text containning block*/
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(13,13,10,0.2);
+  border-radius: 50px;
+}
+.left img{ /*image properties*/
+	width: 75%;
+	height: 90%;
+  border-radius: 50%;
+  animation-name: phot;
+  animation-duration: 1s;
+
+}
+.left img:hover{ /*image animation*/
+  animation-name: photo;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+
+}
+
+@keyframes photo{ /*animation*/
+  from{border-radius: 50%}
+  to{ border-radius: 15%}
+
+}
+@keyframes phot{ /*animation*/
+  from{border-radius:15%}
+  to{border-radius:50%}
+
+}
+
+
+
+.buttom{
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+}
+.foot{
+width: 100%;
+text-align: center;
+color:#fff;
+}
+
+.buttom ul{
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10px;
+
+
+
+}
+.buttom li{
+  margin:1%;
+  list-style: none;
+}
+.buttom span{ /*span used insted of button*/
+  color: #000;
+   padding: 12px 24px;
+   text-decoration: inherit;
+   -webkit-transition-duration: 0.5s;
+   transition-duration: 0.5s;
+
+   font-size: 12px;
+/*taken from w3 schools.com/html*/
+}
+@media screen and ( max-width:600px ){ /*making the page responcive*/
+    body{
+      width:100%;
+      background-color: black;
+    }
+    .back{
+      display:flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+    .front{
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .buttom{
+    display:flex;
+    flex-direction: column;/*showing buttons above the page*/
+    width:100%;
+  }
+  .buttom ul{
+    flex-direction: column;
+    width:90%;
+    margin-left: -20px;
+  }
+span{
+  width:100%;
+}
+}

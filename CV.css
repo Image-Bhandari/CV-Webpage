@@ -1,0 +1,60 @@
+body{
+  background-color:#90AFC5;
+  margin:0%;
+  padding:0%;
+  justify-content: center;
+}
+header{
+  background-color: #2A3132;
+  font-size:36px;
+  text-align: center;
+}
+.mathi{ /*main block */ 
+  flex:1;
+  background-color: #336B87;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.talla{
+  flex:1;
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+.java{ /*widths are for the bar diagram and color eniquely identifies them.*/
+  background-color:RED;
+  width:40%;
+}
+.css{
+  width:60%;
+  background-color:YELLOW;
+}
+.python{
+  width:70%;
+  background-color:BLUE;
+}
+.CCNA{
+  width:98%;
+  background-color:GREEN;
+}
+.table{
+  justify-content: space-around;
+  background-color: #336B87;
+}
+table,th,td{/* property for element of table*/
+text-align: center;
+width:90%;
+   border: 2px solid black;
+}
+footer{
+  background-color:  #2A3132;
+  text-align: center;
+}
+@media screen and ( max-width:600px ){/* making the page responcive*/
+  .mathi{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
